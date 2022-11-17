@@ -30,6 +30,7 @@ public class RestApiController {
     public String join(@RequestBody User user) {
         user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
         user.setRoles("ROLE_USER");
+        user.setRoles("ROLE_USER");
         userRepository.save(user);
         return "회원가입완료";
     }

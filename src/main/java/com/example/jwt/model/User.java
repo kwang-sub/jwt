@@ -1,7 +1,6 @@
 package com.example.jwt.model;
 
-import lombok.Data;
-import lombok.Getter;
+import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,6 +12,9 @@ import java.util.List;
 
 @Data
 @Entity
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
 public class User {
 
     @Id
